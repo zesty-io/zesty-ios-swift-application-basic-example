@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6E6AAA820FD2A22000EDFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */; };
+		A6E6AAAA20FD2A22000EDFE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AAA920FD2A22000EDFE4 /* ViewController.swift */; };
+		A6E6AAAD20FD2A22000EDFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAAB20FD2A22000EDFE4 /* Main.storyboard */; };
+		A6E6AAAF20FD2A2B000EDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */; };
+		A6E6AAB220FD2A2B000EDFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAB020FD2A2B000EDFE4 /* LaunchScreen.storyboard */; };
+		A6E6AABD20FD2A2B000EDFE4 /* ZestyBurgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AABC20FD2A2B000EDFE4 /* ZestyBurgerTests.swift */; };
+		A6E6AAC820FD2A2B000EDFE4 /* ZestyBurgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AAC720FD2A2B000EDFE4 /* ZestyBurgerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6E6AAB920FD2A2B000EDFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E6AA9C20FD2A22000EDFE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6E6AAA320FD2A22000EDFE4;
+			remoteInfo = ZestyBurger;
+		};
+		A6E6AAC420FD2A2B000EDFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E6AA9C20FD2A22000EDFE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6E6AAA320FD2A22000EDFE4;
+			remoteInfo = ZestyBurger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6E6AAA420FD2A22000EDFE4 /* ZestyBurger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZestyBurger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6E6AAA920FD2A22000EDFE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6E6AAAC20FD2A22000EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6E6AAB120FD2A2B000EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6E6AAB320FD2A2B000EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E6AAB820FD2A2B000EDFE4 /* ZestyBurgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZestyBurgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E6AABC20FD2A2B000EDFE4 /* ZestyBurgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZestyBurgerTests.swift; sourceTree = "<group>"; };
+		A6E6AABE20FD2A2B000EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E6AAC320FD2A2B000EDFE4 /* ZestyBurgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZestyBurgerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E6AAC720FD2A2B000EDFE4 /* ZestyBurgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZestyBurgerUITests.swift; sourceTree = "<group>"; };
+		A6E6AAC920FD2A2B000EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6E6AAA120FD2A22000EDFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E6AAB520FD2A2B000EDFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E6AAC020FD2A2B000EDFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6E6AA9B20FD2A22000EDFE4 = {
+			isa = PBXGroup;
+			children = (
+				A6E6AAA620FD2A22000EDFE4 /* ZestyBurger */,
+				A6E6AABB20FD2A2B000EDFE4 /* ZestyBurgerTests */,
+				A6E6AAC620FD2A2B000EDFE4 /* ZestyBurgerUITests */,
+				A6E6AAA520FD2A22000EDFE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6E6AAA520FD2A22000EDFE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6AAA420FD2A22000EDFE4 /* ZestyBurger.app */,
+				A6E6AAB820FD2A2B000EDFE4 /* ZestyBurgerTests.xctest */,
+				A6E6AAC320FD2A2B000EDFE4 /* ZestyBurgerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6E6AAA620FD2A22000EDFE4 /* ZestyBurger */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */,
+				A6E6AAA920FD2A22000EDFE4 /* ViewController.swift */,
+				A6E6AAAB20FD2A22000EDFE4 /* Main.storyboard */,
+				A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */,
+				A6E6AAB020FD2A2B000EDFE4 /* LaunchScreen.storyboard */,
+				A6E6AAB320FD2A2B000EDFE4 /* Info.plist */,
+			);
+			path = ZestyBurger;
+			sourceTree = "<group>";
+		};
+		A6E6AABB20FD2A2B000EDFE4 /* ZestyBurgerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6AABC20FD2A2B000EDFE4 /* ZestyBurgerTests.swift */,
+				A6E6AABE20FD2A2B000EDFE4 /* Info.plist */,
+			);
+			path = ZestyBurgerTests;
+			sourceTree = "<group>";
+		};
+		A6E6AAC620FD2A2B000EDFE4 /* ZestyBurgerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6AAC720FD2A2B000EDFE4 /* ZestyBurgerUITests.swift */,
+				A6E6AAC920FD2A2B000EDFE4 /* Info.plist */,
+			);
+			path = ZestyBurgerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6E6AAA320FD2A22000EDFE4 /* ZestyBurger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E6AACC20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurger" */;
+			buildPhases = (
+				A6E6AAA020FD2A22000EDFE4 /* Sources */,
+				A6E6AAA120FD2A22000EDFE4 /* Frameworks */,
+				A6E6AAA220FD2A22000EDFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZestyBurger;
+			productName = ZestyBurger;
+			productReference = A6E6AAA420FD2A22000EDFE4 /* ZestyBurger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6E6AAB720FD2A2B000EDFE4 /* ZestyBurgerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E6AACF20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurgerTests" */;
+			buildPhases = (
+				A6E6AAB420FD2A2B000EDFE4 /* Sources */,
+				A6E6AAB520FD2A2B000EDFE4 /* Frameworks */,
+				A6E6AAB620FD2A2B000EDFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6E6AABA20FD2A2B000EDFE4 /* PBXTargetDependency */,
+			);
+			name = ZestyBurgerTests;
+			productName = ZestyBurgerTests;
+			productReference = A6E6AAB820FD2A2B000EDFE4 /* ZestyBurgerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6E6AAC220FD2A2B000EDFE4 /* ZestyBurgerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E6AAD220FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurgerUITests" */;
+			buildPhases = (
+				A6E6AABF20FD2A2B000EDFE4 /* Sources */,
+				A6E6AAC020FD2A2B000EDFE4 /* Frameworks */,
+				A6E6AAC120FD2A2B000EDFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6E6AAC520FD2A2B000EDFE4 /* PBXTargetDependency */,
+			);
+			name = ZestyBurgerUITests;
+			productName = ZestyBurgerUITests;
+			productReference = A6E6AAC320FD2A2B000EDFE4 /* ZestyBurgerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6E6AA9C20FD2A22000EDFE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Zesty.io;
+				TargetAttributes = {
+					A6E6AAA320FD2A22000EDFE4 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					A6E6AAB720FD2A2B000EDFE4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A6E6AAA320FD2A22000EDFE4;
+					};
+					A6E6AAC220FD2A2B000EDFE4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A6E6AAA320FD2A22000EDFE4;
+					};
+				};
+			};
+			buildConfigurationList = A6E6AA9F20FD2A22000EDFE4 /* Build configuration list for PBXProject "ZestyBurger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6E6AA9B20FD2A22000EDFE4;
+			productRefGroup = A6E6AAA520FD2A22000EDFE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6E6AAA320FD2A22000EDFE4 /* ZestyBurger */,
+				A6E6AAB720FD2A2B000EDFE4 /* ZestyBurgerTests */,
+				A6E6AAC220FD2A2B000EDFE4 /* ZestyBurgerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6E6AAA220FD2A22000EDFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E6AAB220FD2A2B000EDFE4 /* LaunchScreen.storyboard in Resources */,
+				A6E6AAAF20FD2A2B000EDFE4 /* Assets.xcassets in Resources */,
+				A6E6AAAD20FD2A22000EDFE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E6AAB620FD2A2B000EDFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E6AAC120FD2A2B000EDFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6E6AAA020FD2A22000EDFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E6AAAA20FD2A22000EDFE4 /* ViewController.swift in Sources */,
+				A6E6AAA820FD2A22000EDFE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E6AAB420FD2A2B000EDFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E6AABD20FD2A2B000EDFE4 /* ZestyBurgerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E6AABF20FD2A2B000EDFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E6AAC820FD2A2B000EDFE4 /* ZestyBurgerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6E6AABA20FD2A2B000EDFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6E6AAA320FD2A22000EDFE4 /* ZestyBurger */;
+			targetProxy = A6E6AAB920FD2A2B000EDFE4 /* PBXContainerItemProxy */;
+		};
+		A6E6AAC520FD2A2B000EDFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6E6AAA320FD2A22000EDFE4 /* ZestyBurger */;
+			targetProxy = A6E6AAC420FD2A2B000EDFE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6E6AAAB20FD2A22000EDFE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6E6AAAC20FD2A22000EDFE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6E6AAB020FD2A2B000EDFE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6E6AAB120FD2A2B000EDFE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6E6AACA20FD2A2B000EDFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6E6AACB20FD2A2B000EDFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6E6AACD20FD2A2B000EDFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3FUT3WUPW;
+				INFOPLIST_FILE = ZestyBurger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.zesty.ZestyBurger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6E6AACE20FD2A2B000EDFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3FUT3WUPW;
+				INFOPLIST_FILE = ZestyBurger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.zesty.ZestyBurger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6E6AAD020FD2A2B000EDFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3FUT3WUPW;
+				INFOPLIST_FILE = ZestyBurgerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.zesty.ZestyBurgerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZestyBurger.app/ZestyBurger";
+			};
+			name = Debug;
+		};
+		A6E6AAD120FD2A2B000EDFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3FUT3WUPW;
+				INFOPLIST_FILE = ZestyBurgerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.zesty.ZestyBurgerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZestyBurger.app/ZestyBurger";
+			};
+			name = Release;
+		};
+		A6E6AAD320FD2A2B000EDFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3FUT3WUPW;
+				INFOPLIST_FILE = ZestyBurgerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.zesty.ZestyBurgerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZestyBurger;
+			};
+			name = Debug;
+		};
+		A6E6AAD420FD2A2B000EDFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3FUT3WUPW;
+				INFOPLIST_FILE = ZestyBurgerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.zesty.ZestyBurgerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZestyBurger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6E6AA9F20FD2A22000EDFE4 /* Build configuration list for PBXProject "ZestyBurger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E6AACA20FD2A2B000EDFE4 /* Debug */,
+				A6E6AACB20FD2A2B000EDFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E6AACC20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E6AACD20FD2A2B000EDFE4 /* Debug */,
+				A6E6AACE20FD2A2B000EDFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E6AACF20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurgerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E6AAD020FD2A2B000EDFE4 /* Debug */,
+				A6E6AAD120FD2A2B000EDFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E6AAD220FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurgerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E6AAD320FD2A2B000EDFE4 /* Debug */,
+				A6E6AAD420FD2A2B000EDFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6E6AA9C20FD2A22000EDFE4 /* Project object */;
+}
