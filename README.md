@@ -4,7 +4,7 @@ ZestyAPI makes it super easy to get data from your [Zesty.io](https://zesty.io) 
 
 1. [Installing ZestyAPI](#Installing-Zesty-API)
 2. [Usage](#Usage)
-	- [Initializaion](#Initializaion)
+	- [initialization](#Initialization)
 	- [Using Basic JSON API](#Using-Basic-JSON-API)
 	- [Using Custom JSON Endpoints](#Using-Custom-JSON-Endpoints) 
 
