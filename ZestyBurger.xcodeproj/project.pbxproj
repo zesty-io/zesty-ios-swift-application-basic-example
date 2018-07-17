@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E9415E6302486944A71722C /* Pods_ZestyBurgerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ACE417AE935F6F0540D00D /* Pods_ZestyBurgerTests.framework */; };
+		2FC523DF552733102131C79A /* Pods_ZestyBurger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D98094544D161F33F9E076 /* Pods_ZestyBurger.framework */; };
+		7EC24F8843C8233BF55C5BC1 /* Pods_ZestyBurgerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AF750CB442931AEC1644AF /* Pods_ZestyBurgerUITests.framework */; };
+		A65D50B820FD497F0044AAE5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50B720FD497F0044AAE5 /* TableViewController.swift */; };
+		A65D50BA20FD49CA0044AAE5 /* ZestyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50B920FD49CA0044AAE5 /* ZestyAPI.swift */; };
+		A65D50BC20FD599A0044AAE5 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */; };
+		A65D50BE20FD687E0044AAE5 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */; };
 		A6E6AAA820FD2A22000EDFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */; };
-		A6E6AAAA20FD2A22000EDFE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AAA920FD2A22000EDFE4 /* ViewController.swift */; };
 		A6E6AAAD20FD2A22000EDFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAAB20FD2A22000EDFE4 /* Main.storyboard */; };
 		A6E6AAAF20FD2A2B000EDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */; };
 		A6E6AAB220FD2A2B000EDFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAB020FD2A2B000EDFE4 /* LaunchScreen.storyboard */; };
@@ -34,9 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20397E53284CCAD7C734E6B7 /* Pods-ZestyBurgerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurgerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurgerTests/Pods-ZestyBurgerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50D98094544D161F33F9E076 /* Pods_ZestyBurger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZestyBurger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5706554C58F716B0DF022DB9 /* Pods-ZestyBurgerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurgerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurgerUITests/Pods-ZestyBurgerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5EC52B720744955CEF8D1802 /* Pods-ZestyBurger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger.debug.xcconfig"; sourceTree = "<group>"; };
+		9636C47E7129A96E6FB24B7A /* Pods-ZestyBurger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurger.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger.release.xcconfig"; sourceTree = "<group>"; };
+		A2AF750CB442931AEC1644AF /* Pods_ZestyBurgerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZestyBurgerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A65D50B720FD497F0044AAE5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A65D50B920FD49CA0044AAE5 /* ZestyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZestyAPI.swift; sourceTree = "<group>"; };
+		A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
+		A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		A6E6AAA420FD2A22000EDFE4 /* ZestyBurger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZestyBurger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6E6AAA920FD2A22000EDFE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6E6AAAC20FD2A22000EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6E6AAB120FD2A2B000EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +62,9 @@
 		A6E6AAC320FD2A2B000EDFE4 /* ZestyBurgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZestyBurgerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E6AAC720FD2A2B000EDFE4 /* ZestyBurgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZestyBurgerUITests.swift; sourceTree = "<group>"; };
 		A6E6AAC920FD2A2B000EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8B5BF1EB8CC5C5DC8D6A16A /* Pods-ZestyBurgerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurgerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurgerTests/Pods-ZestyBurgerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1ACE417AE935F6F0540D00D /* Pods_ZestyBurgerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZestyBurgerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE3953DEA8ACBE7AAA0813C5 /* Pods-ZestyBurgerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurgerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurgerUITests/Pods-ZestyBurgerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC523DF552733102131C79A /* Pods_ZestyBurger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9415E6302486944A71722C /* Pods_ZestyBurgerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC24F8843C8233BF55C5BC1 /* Pods_ZestyBurgerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31DE181F631274EDF145CF1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50D98094544D161F33F9E076 /* Pods_ZestyBurger.framework */,
+				B1ACE417AE935F6F0540D00D /* Pods_ZestyBurgerTests.framework */,
+				A2AF750CB442931AEC1644AF /* Pods_ZestyBurgerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6E6AA9B20FD2A22000EDFE4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +112,8 @@
 				A6E6AABB20FD2A2B000EDFE4 /* ZestyBurgerTests */,
 				A6E6AAC620FD2A2B000EDFE4 /* ZestyBurgerUITests */,
 				A6E6AAA520FD2A22000EDFE4 /* Products */,
+				ECEE399688606F0A83EE2321 /* Pods */,
+				31DE181F631274EDF145CF1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +131,14 @@
 			isa = PBXGroup;
 			children = (
 				A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */,
-				A6E6AAA920FD2A22000EDFE4 /* ViewController.swift */,
 				A6E6AAAB20FD2A22000EDFE4 /* Main.storyboard */,
 				A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */,
 				A6E6AAB020FD2A2B000EDFE4 /* LaunchScreen.storyboard */,
 				A6E6AAB320FD2A2B000EDFE4 /* Info.plist */,
+				A65D50B720FD497F0044AAE5 /* TableViewController.swift */,
+				A65D50B920FD49CA0044AAE5 /* ZestyAPI.swift */,
+				A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */,
+				A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */,
 			);
 			path = ZestyBurger;
 			sourceTree = "<group>";
@@ -125,6 +161,19 @@
 			path = ZestyBurgerUITests;
 			sourceTree = "<group>";
 		};
+		ECEE399688606F0A83EE2321 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EC52B720744955CEF8D1802 /* Pods-ZestyBurger.debug.xcconfig */,
+				9636C47E7129A96E6FB24B7A /* Pods-ZestyBurger.release.xcconfig */,
+				20397E53284CCAD7C734E6B7 /* Pods-ZestyBurgerTests.debug.xcconfig */,
+				A8B5BF1EB8CC5C5DC8D6A16A /* Pods-ZestyBurgerTests.release.xcconfig */,
+				DE3953DEA8ACBE7AAA0813C5 /* Pods-ZestyBurgerUITests.debug.xcconfig */,
+				5706554C58F716B0DF022DB9 /* Pods-ZestyBurgerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6E6AACC20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurger" */;
 			buildPhases = (
+				5BAE77CE73F0C0884A543A40 /* [CP] Check Pods Manifest.lock */,
 				A6E6AAA020FD2A22000EDFE4 /* Sources */,
 				A6E6AAA120FD2A22000EDFE4 /* Frameworks */,
 				A6E6AAA220FD2A22000EDFE4 /* Resources */,
+				9198CAC8108E093083BCCCBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6E6AACF20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurgerTests" */;
 			buildPhases = (
+				57EA7B648367FDEC6F6802CF /* [CP] Check Pods Manifest.lock */,
 				A6E6AAB420FD2A2B000EDFE4 /* Sources */,
 				A6E6AAB520FD2A2B000EDFE4 /* Frameworks */,
 				A6E6AAB620FD2A2B000EDFE4 /* Resources */,
@@ -167,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6E6AAD220FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurgerUITests" */;
 			buildPhases = (
+				8B4227AD7613EB38CC68608F /* [CP] Check Pods Manifest.lock */,
 				A6E6AABF20FD2A2B000EDFE4 /* Sources */,
 				A6E6AAC020FD2A2B000EDFE4 /* Frameworks */,
 				A6E6AAC120FD2A2B000EDFE4 /* Resources */,
@@ -251,12 +304,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57EA7B648367FDEC6F6802CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZestyBurgerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BAE77CE73F0C0884A543A40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZestyBurger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B4227AD7613EB38CC68608F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZestyBurgerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9198CAC8108E093083BCCCBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6E6AAA020FD2A22000EDFE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6E6AAAA20FD2A22000EDFE4 /* ViewController.swift in Sources */,
+				A65D50BE20FD687E0044AAE5 /* DisplayViewController.swift in Sources */,
+				A65D50B820FD497F0044AAE5 /* TableViewController.swift in Sources */,
+				A65D50BC20FD599A0044AAE5 /* DefaultTableViewCell.swift in Sources */,
+				A65D50BA20FD49CA0044AAE5 /* ZestyAPI.swift in Sources */,
 				A6E6AAA820FD2A22000EDFE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +561,7 @@
 		};
 		A6E6AACD20FD2A2B000EDFE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC52B720744955CEF8D1802 /* Pods-ZestyBurger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +580,7 @@
 		};
 		A6E6AACE20FD2A2B000EDFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9636C47E7129A96E6FB24B7A /* Pods-ZestyBurger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +599,7 @@
 		};
 		A6E6AAD020FD2A2B000EDFE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20397E53284CCAD7C734E6B7 /* Pods-ZestyBurgerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +621,7 @@
 		};
 		A6E6AAD120FD2A2B000EDFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8B5BF1EB8CC5C5DC8D6A16A /* Pods-ZestyBurgerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +643,7 @@
 		};
 		A6E6AAD320FD2A2B000EDFE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE3953DEA8ACBE7AAA0813C5 /* Pods-ZestyBurgerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +664,7 @@
 		};
 		A6E6AAD420FD2A2B000EDFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5706554C58F716B0DF022DB9 /* Pods-ZestyBurgerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
