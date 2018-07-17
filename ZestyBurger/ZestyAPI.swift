@@ -107,8 +107,8 @@ class ZestyAPI {
     ///
     /// Zuid Meanings and Functions to Use
     ///
-    /// - Any zuid that starts with a *6* is an array of items (use `getArray`)
-    /// - Any zuid that starts with a *7* is an object (use `getItem`)
+    /// - Any zuid that starts with a **6** is an array of items (use `getArray`)
+    /// - Any zuid that starts with a **7** is an object (use `getItem`)
     ///
     /// Sample Usage
     /// ==========
@@ -116,7 +116,7 @@ class ZestyAPI {
     /// Code
     /// ----
     ///
-    /// For example, getting a specific item with zuid 6-9bfe5c-ntqxrs
+    /// For example, getting a specific item with zuid `6-9bfe5c-ntqxrs`
     ///
     ///     // Create the ZestyAPI Object
     ///     let api = Zesty(url: "http://burger.zesty.site")
@@ -165,8 +165,8 @@ class ZestyAPI {
     ///
     /// Zuid Meanings and Functions to Use
     ///
-    /// - Any zuid that starts with a *6* is an array of items (use `getArray`)
-    /// - Any zuid that starts with a *7* is an object (use `getItem`)
+    /// - Any zuid that starts with a **6** is an array of items (use `getArray`)
+    /// - Any zuid that starts with a **7** is an object (use `getItem`)
     ///
     /// Sample Usage
     /// ==========
@@ -174,7 +174,7 @@ class ZestyAPI {
     /// Code
     /// ----
     ///
-    /// For example, getting a specific item with zuid 7-9bfe5c-ntqxrs
+    /// For example, getting a specific item with zuid `7-9bfe5c-ntqxrs`
     ///
     ///     // Create the ZestyAPI Object
     ///     let api = Zesty(url: "http://burger.zesty.site")

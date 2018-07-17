@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 
+/// Provides a TableView to navigate through all the menus of [ZestyBurger](http://burger.zesty.site)
 class TableViewController: UITableViewController {
 
     var items: [String] = []
@@ -17,6 +18,8 @@ class TableViewController: UITableViewController {
     var path = "/"
     var json: JSON!
     
+    /// Makes all the api calls
+    /// note: api data should be set in instantiation by editing `TableViewController.endpoint`, `TableViewController.params`, and `TableViewController.path`
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -28,8 +31,7 @@ class TableViewController: UITableViewController {
         api.getArray(for: "6-9bfe5c-ntqxrs") { (data) in
 //            print(data)
         }
-        api.getCustomData(from: self.endpoint, params: self.params) { (data, err) in
-            if (err == nil) {
+        api.getCustomData(from: self.endpoint, params: self.params) { (data) in
                 self.json = data
                 if (self.path == "/") {
                     self.items = ["About", "Locations", "Events", "Menu", "Blog", "Careers"]
@@ -54,10 +56,7 @@ class TableViewController: UITableViewController {
                 }
                 self.tableView.reloadData()
             }
-            else {
-                print(err!.localizedDescription)
-            }
-        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

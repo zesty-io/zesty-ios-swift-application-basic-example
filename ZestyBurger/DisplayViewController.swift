@@ -9,9 +9,11 @@
 import UIKit
 import WebKit
 
+/// Displays a WebView with html from `DisplayViewController.htmlData`
 class DisplayViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
+    /// Loaded in before instatiation
     var htmlData: String = ""
     
     override func viewDidLoad() {

@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Displays a single UILabel
 class DefaultTableViewCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
