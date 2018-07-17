@@ -20,9 +20,15 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
         let api = ZestyAPI(url: "https://6c706l48-dev.preview.zestyio.com")
-        api.getData(from: self.endpoint, params: self.params) { (data, err) in
+        let zuid = "7-6a9a271-90blqw"
+//        api.getItem(for: zuid) { (data) in
+//            print(data["city"])
+//        }
+        api.getArray(for: "6-9bfe5c-ntqxrs") { (data) in
+//            print(data)
+        }
+        api.getCustomData(from: self.endpoint, params: self.params) { (data, err) in
             if (err == nil) {
                 self.json = data
                 if (self.path == "/") {
