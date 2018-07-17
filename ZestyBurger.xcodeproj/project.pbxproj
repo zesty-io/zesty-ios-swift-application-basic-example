@@ -14,6 +14,7 @@
 		A65D50BA20FD49CA0044AAE5 /* ZestyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50B920FD49CA0044AAE5 /* ZestyAPI.swift */; };
 		A65D50BC20FD599A0044AAE5 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */; };
 		A65D50BE20FD687E0044AAE5 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */; };
+		A6D5F0E620FE8FDB00A2DDBC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6D5F0E520FE8FDB00A2DDBC /* README.md */; };
 		A6E6AAA820FD2A22000EDFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */; };
 		A6E6AAAD20FD2A22000EDFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAAB20FD2A22000EDFE4 /* Main.storyboard */; };
 		A6E6AAAF20FD2A2B000EDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		A65D50B920FD49CA0044AAE5 /* ZestyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZestyAPI.swift; sourceTree = "<group>"; };
 		A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		A6D5F0E520FE8FDB00A2DDBC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A6E6AAA420FD2A22000EDFE4 /* ZestyBurger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZestyBurger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6E6AAAC20FD2A22000EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		A6E6AA9B20FD2A22000EDFE4 = {
 			isa = PBXGroup;
 			children = (
+				A6D5F0E520FE8FDB00A2DDBC /* README.md */,
 				A6E6AAA620FD2A22000EDFE4 /* ZestyBurger */,
 				A6E6AABB20FD2A2B000EDFE4 /* ZestyBurgerTests */,
 				A6E6AAC620FD2A2B000EDFE4 /* ZestyBurgerUITests */,
@@ -284,6 +287,7 @@
 			files = (
 				A6E6AAB220FD2A2B000EDFE4 /* LaunchScreen.storyboard in Resources */,
 				A6E6AAAF20FD2A2B000EDFE4 /* Assets.xcassets in Resources */,
+				A6D5F0E620FE8FDB00A2DDBC /* README.md in Resources */,
 				A6E6AAAD20FD2A22000EDFE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
