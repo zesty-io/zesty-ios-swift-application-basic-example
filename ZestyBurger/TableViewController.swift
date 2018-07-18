@@ -25,13 +25,18 @@ class TableViewController: UITableViewController {
     
         let api = ZestyAPI(url: "https://6c706l48-dev.preview.zestyio.com")
         let zuid = "7-6a9a271-90blqw"
-//        api.getItem(for: zuid) { (data) in
+//        api.getItem(for: zuid) { (data, error) in
 //            print(data["city"])
 //        }
-        api.getArray(for: "6-9bfe5c-ntqxrs") { (data) in
+        api.getArray(for: "6-9bfe5c-ntqxrs") { (data, error) in
 //            print(data)
         }
-        api.getCustomData(from: self.endpoint, params: self.params) { (data) in
+        api.getCustomData(from: self.endpoint, params: self.params) { (data, some) in
+            if let error = some {
+                // handle
+                print(error.localizedDescription)
+                return
+            }
                 self.json = data
                 if (self.path == "/") {
                     self.items = ["About", "Locations", "Events", "Menu", "Blog", "Careers"]

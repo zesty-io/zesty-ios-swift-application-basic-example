@@ -77,7 +77,7 @@ class ZestyAPI {
     ///   - params: A Dictionary containing all the parameters. Use `nil` if there are no parameters
     ///   - completionHandler: Closure that handles the data once it is retrieved. If nothing is found, an empty array will be returned instead, and the error will be printed to the console.
     ///   - data: Returned through the closure, this is the [JSON](https://github.com/SwiftyJSON/SwiftyJSON#usage) object
-    func getCustomData(from endpoint: String, params: [String : String]!, completionHandler: @escaping (_ data: JSON) -> Void) {
+    func getCustomData(from endpoint: String, params: [String : String]!, completionHandler: @escaping (_ data: JSON, _ error: ZestyError?) -> Void) {
         var paramText = ""
         if (params != nil) {
             paramText = "?"
@@ -86,17 +86,17 @@ class ZestyAPI {
             }).reduce("",+)
         }
         
-        let urlString = "\(self.baseURL)/-/custom/\(endpoint)?\(paramText)"
+        let urlString = "\(self.baseURL)/-/custom/\(endpoint)\(paramText)"
         let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!
         
         Alamofire.request(url, method: .get).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                completionHandler(json)
+                completionHandler(json, nil)
             case .failure(let error):
                 print(error.localizedDescription)
-                completionHandler(JSON.null)
+                completionHandler(JSON.null, ZestyError.alamofireError)
             }
         }
     }
@@ -130,11 +130,12 @@ class ZestyAPI {
     ///   - zuid: The zuid for the item in question. It should start with a 7 when using this function
     ///   - completionHandler: Closure that handles the data once it is retrieved. If nothing is found, an empty array will be returned instead
     ///   - data: Returned through the closure, this is the [String : String] dictionary, in JSON Format
-    func getItem(for zuid: String, completionHandler: @escaping (_ data: [String : String]) -> Void) {
+    func getItem(for zuid: String, completionHandler: @escaping (_ data: [String : String], _ error: ZestyError?) -> Void) {
         let urlString = "\(self.baseURL)/-/basic-content/\(zuid).json"
-        let url = URL(string: urlString)!
-        
+        let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!
+
         Alamofire.request(url, method: .get).validate().responseJSON { (response) in
+            print(urlString)
             switch response.result {
             case .success((let value)):
                 let json = JSON(value)
@@ -143,17 +144,18 @@ class ZestyAPI {
                     stringJsonDict.forEach({ (key, valueJSON) in
                         stringStringDict[key] = valueJSON.stringValue
                     })
-                    completionHandler(stringStringDict)
+                    completionHandler(stringStringDict, nil)
                 }
                 else {
-                    // data incorrect shape. Go to <your_url>/-/basic-content/<zuid>.json to see if the json is loading properly. If the problem persists, contact support @ http://chat.zesty.io/
-                    completionHandler([:])
+                    print("data incorrect shape. Go to <your_url>/-/basic-content/<zuid>.json to see if the json is loading properly. If the problem persists, contact support @ http://chat.zesty.io/")
+                    
+                    completionHandler([:], ZestyError.incorrectShape)
                 }
                 
                 break
             case .failure(let error):
                 print(error.localizedDescription)
-                completionHandler([:])
+                completionHandler([:], ZestyError.alamofireError)
                 break
             }
         }
@@ -190,10 +192,10 @@ class ZestyAPI {
     ///   - zuid: The zuid for the item in question. It should start with a 6 when using this function
     ///   - completionHandler: Closure that handles the data once it is retrieved. If nothing is found, an empty array will be returned instead
     ///   - data: Returned through the closure, this is the [[String : String]] array of dictionaries
-    func getArray(for zuid: String, completionHandler: @escaping (_ data : [[String : String]]) -> Void) {
+    func getArray(for zuid: String, completionHandler: @escaping (_ data : [[String : String]], _ error: ZestyError?) -> Void) {
         let urlString = "\(self.baseURL)/-/basic-content/\(zuid).json"
-        let url = URL(string: urlString)!
-        
+        let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!
+
         Alamofire.request(url, method: .get).validate().responseJSON { (response) in
             switch response.result {
             case .success((let value)):
@@ -227,14 +229,41 @@ class ZestyAPI {
                     }
                 }
                 let toReturn = Array(d.values)
-                completionHandler(toReturn)
+                completionHandler(toReturn, nil)
                 break
             case .failure(let error):
                 print(error.localizedDescription)
-                completionHandler([[:]])
+                completionHandler([[:]], ZestyError.alamofireError)
                 break
             }
         }
     }
 
+}
+
+enum ZestyError : Error {
+    case unknownError
+    case alamofireError
+    case swiftyJsonError
+    case invalidURL
+    case noData
+    case incorrectShape
+
+    
+    var localizedDescription: String? {
+        switch self {
+        case .unknownError:
+            return NSLocalizedString("Unknown Error Type. If the issue persists, contact support (https://chat.zesty.io)", comment: "Zesty Error")
+        case .alamofireError:
+            return NSLocalizedString("Error with Alamofire. See debug console for more information. This may be caused by an incorrect url or an insecure request", comment: "Zesty Error")
+        case .swiftyJsonError:
+            return NSLocalizedString("Error with SwiftyJSON. See debug console for more information. This may be caused by invalid JSON", comment: "Zesty Error")
+        case .invalidURL:
+            return NSLocalizedString("The URL / Endpoint / ZUID you are trying to access does not exist. Try making sure you can access the endpoint online.", comment: "Zesty Error")
+        case .noData:
+            return NSLocalizedString("No Data Was Found", comment: "Zesty Error")
+        case .incorrectShape:
+            return NSLocalizedString("The Data was in an unrecognizable shape. Try seeing if your endpoint is written correctly.", comment: "Zesty Error")
+        }
+    }
 }
