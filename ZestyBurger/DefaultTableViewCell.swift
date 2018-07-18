@@ -12,6 +12,7 @@ import UIKit
 class DefaultTableViewCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
+    var header: Bool = false
     
     override func awakeFromNib() {
         super.awakeFromNib()

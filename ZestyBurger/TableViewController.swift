@@ -17,13 +17,14 @@ class TableViewController: UITableViewController {
     var params: [String: String]! = nil
     var path = "/"
     var json: JSON!
+    var api: ZestyAPI!
     
     /// Makes all the api calls
     /// note: api data should be set in instantiation by editing `TableViewController.endpoint`, `TableViewController.params`, and `TableViewController.path`
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        let api = ZestyAPI(url: "https://6c706l48-dev.preview.zestyio.com")
+        api = ZestyAPI(url: "https://6c706l48-dev.preview.zestyio.com")
         let zuid = "7-6a9a271-90blqw"
 //        api.getItem(for: zuid) { (data, error) in
 //            print(data["city"])
@@ -37,30 +38,48 @@ class TableViewController: UITableViewController {
                 print(error.localizedDescription)
                 return
             }
-                self.json = data
-                if (self.path == "/") {
-                    self.items = ["About", "Locations", "Events", "Menu", "Blog", "Careers"]
-                }
-                else if (self.path == "/locations") {
-                    self.items = data["locations"].arrayValue.map { $0.stringValue }
-                }
-                else if (self.path == "/locations/specificloc") {
-                    self.items = ["Events", "Menu", "Careers"]
-                }
-                else if (self.path == "/locations/specificloc/menu") {
-                    self.items = Array(data["items"].dictionaryValue.keys)
-                    self.json = data["items"]
-                }
-                else if (self.path == "/locations/specificloc/events") {
-                    self.items = Array(data["events"].dictionaryValue.keys)
-                    self.json = data["events"]
-                }
-                else if (self.path == "/locations/specificloc/careers") {
-                    self.items = Array(data["careers"].dictionaryValue.keys)
-                    self.json = data["careers"]
-                }
-                self.tableView.reloadData()
+            self.json = data
+        
+            switch(self.path) {
+            case "/":
+                self.items = ["About", "Locations", "Events", "Menu", "Blog", "Careers"]
+                break
+            case "/menu":
+                self.items.append("@ESCAPING/: Food")
+                self.items.append(contentsOf: Array(data["items"]["food"].dictionaryValue.keys))
+                self.items.append("@ESCAPING/: Drink")
+                self.items.append(contentsOf: Array(data["items"]["drink"].dictionaryValue.keys))
+                self.json = data["items"]["food"].combine(with: data["items"]["drink"])
+                break
+            case "/blog":
+                self.items = Array(data["posts"].dictionaryValue.keys)
+                self.json = data["posts"]
+                break
+            case "/locations":
+                self.items = data["locations"].arrayValue.map { $0.stringValue }
+                break
+            case "/locations/specificloc":
+                self.items = ["Events", "Menu", "Careers"]
+                break
+            case "/locations/specificloc/menu":
+                self.items = Array(data["items"].dictionaryValue.keys)
+                self.json = data["items"]
+                break
+            case "/locations/specificloc/events", "/events":
+                self.items = Array(data["events"].dictionaryValue.keys)
+                self.json = data["events"]
+                break
+            case "/locations/specificloc/careers", "/careers":
+                self.items = Array(data["careers"].dictionaryValue.keys)
+                self.json = data["careers"]
+                break
+            default:
+                break
             }
+            
+            
+            self.tableView.reloadData()
+        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -81,23 +100,47 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "default") as! DefaultTableViewCell
-        
+        let text = self.items[indexPath.row]
+        if (text.contains("@ESCAPING/: ")) {
+            let left = text.index(text.startIndex, offsetBy: 12)
+            cell.label.text! = String(text[left..<text.endIndex])
+            cell.label.font = UIFont.boldSystemFont(ofSize: cell.label.font.pointSize)
+            cell.header = true
+        }
         cell.label.text! = self.items[indexPath.row]
 
         return cell
     }
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let text = (tableView.cellForRow(at: indexPath) as! DefaultTableViewCell).label.text!
+        let cell = (tableView.cellForRow(at: indexPath) as! DefaultTableViewCell)
+        if cell.header {
+            return
+        }
+        let text = cell.label.text!
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "tableVC") as! TableViewController
         
         switch(self.path) {
         case "/":
-            vc.path = "/\(text.lowercased())"
-            vc.endpoint = "\(text.lowercased())list"
-            vc.params = self.params
-            self.navigationController?.pushViewController(vc, animated: true)
-            vc.navigationItem.title! = "\(text)"
+            if text.lowercased() == "about" {
+                let realVC = self.storyboard!.instantiateViewController(withIdentifier: "displayVC") as! DisplayViewController
+                // use this when basic-json-endpoint api gets fixed on the zesty.io side
+//                api.getItem(for: "7-a4b6ac-bc4n0q") { (data, error) in
+//                    realVC.htmlData = ((error != nil) ? error!.localizedDescription : data["description"])!
+//                    self.navigationController?.pushViewController(realVC, animated: true)
+//                }
+                api.getCustomData(from: "aboutdata", params: nil) { (data, error) in
+                    realVC.htmlData = data["content"].stringValue
+                    self.navigationController?.pushViewController(realVC, animated: true)
+                }
+            }
+            else {
+                vc.path = "/\(text.lowercased())"
+                vc.endpoint = "\(text.lowercased())list"
+                vc.params = self.params
+                self.navigationController?.pushViewController(vc, animated: true)
+                vc.navigationItem.title! = "\(text)"
+            }
             break
         case "/locations":
             vc.path = "/locations/specificloc"
@@ -114,9 +157,9 @@ class TableViewController: UITableViewController {
             vc.navigationItem.title! = text
             
             break
-        case "/locations/specificloc/events", "/locations/specificloc/careers", "/locations/specificloc/menu":
+        case "/locations/specificloc/events", "/locations/specificloc/careers", "/locations/specificloc/menu", "/events", "/careers", "/menu","/blog":
             let realVC = self.storyboard!.instantiateViewController(withIdentifier: "displayVC") as! DisplayViewController
-            realVC.htmlData = json[text]["description"].stringValue
+            realVC.htmlData = json[text][( (self.path == "/blog") ? "content" : "description")].stringValue
             self.navigationController?.pushViewController(realVC, animated: true)
 //            realVC.navigationItem.title! = text
             break
