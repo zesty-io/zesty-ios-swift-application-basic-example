@@ -214,26 +214,30 @@ class ZestyAPI {
                 // now we have an array of dictionaries, with multiple versions per value.
                 var d: [String : [String : String]] = [:]
                 for dict in stringStringDictArray {
-                    let zuid = dict["_item_zuid"]!
-                    let version = dict["_version"]!
-                    print("Zuid: \(dict["_item_zuid"]!)")
-                    print("Version: \(dict["_version"]!)")
-                    if let val = d[zuid] {
-                        // val is the [String : String] obj itself
-                        if Int(val["_version"]!)! < Int(version)! { // if this new thing is a later version
-                            d[zuid] = dict // update it
+                    if let z = dict["_item_zuid"], let version = dict["_version"] {
+                        if let val = d[z] {
+                            // val is the [String : String] obj itself
+                            if Int(val["_version"]!)! < Int(version)! { // if this new thing is a later version
+                                d[zuid] = dict // update it
+                            }
+                        }
+                        else {
+                            d[zuid] = dict // initial placement of the zuid
                         }
                     }
                     else {
-                        d[zuid] = dict // initial placement of the zuid
+                        completionHandler([], ZestyError.incorrectShape)
                     }
+                    
+
+                    
                 }
                 let toReturn = Array(d.values)
                 completionHandler(toReturn, nil)
                 break
             case .failure(let error):
                 print(error.localizedDescription)
-                completionHandler([[:]], ZestyError.alamofireError)
+                completionHandler([], ZestyError.alamofireError)
                 break
             }
         }
