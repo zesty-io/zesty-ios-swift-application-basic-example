@@ -68,7 +68,11 @@ class ZestyAPI {
     ///     let api = Zesty(url: "http://burger.zesty.site")
     ///     let endpoint = "menulist"
     ///     let parameters = ["location" : "San Diego"]
-    ///     getCustomData(from: endpoint, params: parameters, { (json) in
+    ///     getCustomData(from: endpoint, params: parameters, { (json, error) in
+    ///         if (error != nil) {
+    ///             // error handling
+    ///             return
+    ///         }
     ///         print(item) // item is a [String : String] dictionary, in JSON Format
     ///     }
     /// - note: ZestyAPI uses [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) to handle JSON objects. The returned JSON object's methods reference can be found [here](https://github.com/SwiftyJSON/SwiftyJSON#usage). If you want to use a different type of JSON parsing, the raw data can be extracted from the JSON object using `json.rawString(options: [.castNilToNSNull: true])`. More information on extracting the raw JSON String can be found [here](https://github.com/SwiftyJSON/SwiftyJSON#user-content-string-representation)
@@ -122,7 +126,11 @@ class ZestyAPI {
     ///     let api = Zesty(url: "http://burger.zesty.site")
     ///     let zuid = "6-9bfe5c-ntqxrs"
     ///
-    ///     api.getItem(for: zuid, { (item) in
+    ///     api.getItem(for: zuid, { (item, error) in
+    ///         if (error != nil) {
+    ///             // error handling
+    ///             return
+    ///         }
     ///         print(item) // item is a [String : String] dictionary, in JSON Format
     ///     }
     /// - note: Using this function requires basic json endpoints to be [enabled](https://developer.zesty.io/guides/api/basic-api-json-endpoints-guide/).
@@ -182,7 +190,11 @@ class ZestyAPI {
     ///     let api = Zesty(url: "http://burger.zesty.site")
     ///     let zuid = "7-9bfe5c-ntqxrs"
     ///
-    ///     api.getArray(for: zuid, { (items) in
+    ///     api.getArray(for: zuid, { (items, error) in
+    ///         if (error != nil) {
+    ///             // error handling
+    ///             return
+    ///         }
     ///         for item in items {
     ///             print(item) // item is a [String : String] dictionary, in JSON Format
     ///         }
@@ -245,12 +257,64 @@ class ZestyAPI {
 
 }
 
+/// Custom Error Class for ZestyAPI Errors
+///
+/// Detailed error information can be found by accessing `localizedDescription`
+///
+/// Example Error Handling
+/// =======
+///
+///     // Create the ZestyAPI Object
+///     let api = Zesty(url: "http://burger.zesty.site")
+///     let zuid = "6-9bfe5c-ntqxrs"
+///
+///     api.getItem(for: zuid, { (item, error) in
+///         if (error != nil) {
+///             print(error.localizedDescription)
+///             // error handling
+///         }
+///         print(item) // item is a [String : String] dictionary, in JSON Format
+///     }
+///
+/// ZestyError also supports error type handling
+///
+/// Error Case Handling:
+/// ========
+///
+///     // Create the ZestyAPI Object
+///     let api = Zesty(url: "http://burger.zesty.site")
+///     let zuid = "6-9bfe5c-ntqxrs"
+///
+///     api.getItem(for: zuid, { (item, error) in
+///         if (error != nil) {
+///             switch (error) {
+///                 case .noData:
+///                     // write code to handle this
+///                     break
+///                 case .invalidURL:
+///                     // write code to handle this
+///                     break
+///                 default:
+///                     // you can also handle every type of error (there are 6 in total)
+///                     break
+///             }
+///             // error handling
+///         }
+///         print(item) // item is a [String : String] dictionary, in JSON Format
+///     }
+///
 enum ZestyError : Error {
+    /// Unknown Error Type. If the issue persists, contact support (https://chat.zesty.io)", comment: "Zesty Error
     case unknownError
+    /// Error with Alamofire. See debug console for more information. This may be caused by an incorrect url or an insecure request
     case alamofireError
+    /// Error with SwiftyJSON. See debug console for more information. This may be caused by invalid JSON
     case swiftyJsonError
+    /// The URL / Endpoint / ZUID you are trying to access does not exist. Try making sure you can access the endpoint online
     case invalidURL
+    /// No Data Was Found
     case noData
+    /// The Data was in an unrecognizable shape. Try seeing if your endpoint is written correctly.
     case incorrectShape
 
     
