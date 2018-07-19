@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ZestyBurger-->
+        <!--Zesty Burger-->
         <scene sceneID="7jt-sp-2n2">
             <objects>
-                <tableViewController storyboardIdentifier="tableVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9nr-LE-Jc7" customClass="TableViewController" customModule="ZestyBurger" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="tableVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9nr-LE-Jc7" customClass="TableViewController" customModule="zesty_ios_swift_application_basic_example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wxt-eM-SNh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="default" id="Kwn-AS-gaM" customClass="DefaultTableViewCell" customModule="ZestyBurger" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="default" id="Kwn-AS-gaM" customClass="DefaultTableViewCell" customModule="zesty_ios_swift_application_basic_example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kwn-AS-gaM" id="3GO-gR-kgd">
@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="9nr-LE-Jc7" id="cQi-pi-ZkU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ZestyBurger" id="0Dz-2I-GIo"/>
+                    <navigationItem key="navigationItem" title="Zesty Burger" id="0Dz-2I-GIo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHQ-Dd-u5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,7 +59,7 @@
         <!--Display View Controller-->
         <scene sceneID="6WO-S4-QnT">
             <objects>
-                <viewController storyboardIdentifier="displayVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qMd-jx-yEV" customClass="DisplayViewController" customModule="ZestyBurger" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="displayVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qMd-jx-yEV" customClass="DisplayViewController" customModule="zesty_ios_swift_application_basic_example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pMS-SR-YTA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,15 +1,15 @@
 //
-//  ZestyBurgerTests.swift
-//  ZestyBurgerTests
+//  zesty_ios_swift_application_basic_exampleTests.swift
+//  zesty-ios-swift-application-basic-exampleTests
 //
-//  Created by Ronak Shah on 7/16/18.
+//  Created by Ronak Shah on 7/19/18.
 //  Copyright © 2018 Zesty.io. All rights reserved.
 //
 
 import XCTest
-@testable import ZestyBurger
+@testable import zesty_ios_swift_application_basic_example
 
-class ZestyBurgerTests: XCTestCase {
+class zesty_ios_swift_application_basic_exampleTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

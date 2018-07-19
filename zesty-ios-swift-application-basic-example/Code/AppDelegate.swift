@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ZestyBurger
+//  zesty-ios-swift-application-basic-example
 //
 //  Created by Ronak Shah on 7/16/18.
 //  Copyright © 2018 Zesty.io. All rights reserved.

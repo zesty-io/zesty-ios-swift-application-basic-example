@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E9415E6302486944A71722C /* Pods_ZestyBurgerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ACE417AE935F6F0540D00D /* Pods_ZestyBurgerTests.framework */; };
-		2FC523DF552733102131C79A /* Pods_ZestyBurger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D98094544D161F33F9E076 /* Pods_ZestyBurger.framework */; };
-		7EC24F8843C8233BF55C5BC1 /* Pods_ZestyBurgerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AF750CB442931AEC1644AF /* Pods_ZestyBurgerUITests.framework */; };
+		04181923539B73B50AA6437A /* Pods_zesty_ios_swift_application_basic_exampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F17B4F2CACD4E0F8D4B2B85 /* Pods_zesty_ios_swift_application_basic_exampleUITests.framework */; };
+		5B17756151FEA3F94735626D /* Pods_zesty_ios_swift_application_basic_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFA8D6692B24D74CF361571 /* Pods_zesty_ios_swift_application_basic_example.framework */; };
 		A65D50B820FD497F0044AAE5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50B720FD497F0044AAE5 /* TableViewController.swift */; };
 		A65D50BA20FD49CA0044AAE5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50B920FD49CA0044AAE5 /* Extensions.swift */; };
 		A65D50BC20FD599A0044AAE5 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */; };
 		A65D50BE20FD687E0044AAE5 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */; };
+		A6CA978321013D26003042B6 /* zesty-ios-swift-application-basic-example.UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CA978221013D25003042B6 /* zesty-ios-swift-application-basic-example.UITests.swift */; };
 		A6D5F0E620FE8FDB00A2DDBC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6D5F0E520FE8FDB00A2DDBC /* README.md */; };
 		A6E6AAA820FD2A22000EDFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */; };
 		A6E6AAAD20FD2A22000EDFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAAB20FD2A22000EDFE4 /* Main.storyboard */; };
 		A6E6AAAF20FD2A2B000EDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */; };
 		A6E6AAB220FD2A2B000EDFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E6AAB020FD2A2B000EDFE4 /* LaunchScreen.storyboard */; };
-		A6E6AABD20FD2A2B000EDFE4 /* ZestyBurgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AABC20FD2A2B000EDFE4 /* ZestyBurgerTests.swift */; };
-		A6E6AAC820FD2A2B000EDFE4 /* ZestyBurgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AAC720FD2A2B000EDFE4 /* ZestyBurgerUITests.swift */; };
+		A6E6AABD20FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6AABC20FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests.swift */; };
+		F05A52D78726B69C582D12D8 /* Pods_zesty_ios_swift_application_basic_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDD4C937B6E19403C14AB47 /* Pods_zesty_ios_swift_application_basic_exampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,44 +29,44 @@
 			containerPortal = A6E6AA9C20FD2A22000EDFE4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A6E6AAA320FD2A22000EDFE4;
-			remoteInfo = ZestyBurger;
+			remoteInfo = "zesty-ios-swift-application-basic-example";
 		};
 		A6E6AAC420FD2A2B000EDFE4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A6E6AA9C20FD2A22000EDFE4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A6E6AAA320FD2A22000EDFE4;
-			remoteInfo = ZestyBurger;
+			remoteInfo = "zesty-ios-swift-application-basic-example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20397E53284CCAD7C734E6B7 /* Pods-ZestyBurgerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurgerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurgerTests/Pods-ZestyBurgerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		50D98094544D161F33F9E076 /* Pods_ZestyBurger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZestyBurger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5706554C58F716B0DF022DB9 /* Pods-ZestyBurgerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurgerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurgerUITests/Pods-ZestyBurgerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5EC52B720744955CEF8D1802 /* Pods-ZestyBurger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger.debug.xcconfig"; sourceTree = "<group>"; };
-		9636C47E7129A96E6FB24B7A /* Pods-ZestyBurger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurger.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger.release.xcconfig"; sourceTree = "<group>"; };
-		A2AF750CB442931AEC1644AF /* Pods_ZestyBurgerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZestyBurgerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F17B4F2CACD4E0F8D4B2B85 /* Pods_zesty_ios_swift_application_basic_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zesty_ios_swift_application_basic_exampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFA8D6692B24D74CF361571 /* Pods_zesty_ios_swift_application_basic_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zesty_ios_swift_application_basic_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDD4C937B6E19403C14AB47 /* Pods_zesty_ios_swift_application_basic_exampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zesty_ios_swift_application_basic_exampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60EDC0930C4CC1A321D0BBDF /* Pods-zesty-ios-swift-application-basic-exampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zesty-ios-swift-application-basic-exampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zesty-ios-swift-application-basic-exampleUITests/Pods-zesty-ios-swift-application-basic-exampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F76B18167450529420069B8 /* Pods-zesty-ios-swift-application-basic-exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zesty-ios-swift-application-basic-exampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zesty-ios-swift-application-basic-exampleTests/Pods-zesty-ios-swift-application-basic-exampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E6EEDC93FC92F220734E752 /* Pods-zesty-ios-swift-application-basic-exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zesty-ios-swift-application-basic-exampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zesty-ios-swift-application-basic-exampleTests/Pods-zesty-ios-swift-application-basic-exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A65D50B720FD497F0044AAE5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A65D50B920FD49CA0044AAE5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		A6CA978221013D25003042B6 /* zesty-ios-swift-application-basic-example.UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "zesty-ios-swift-application-basic-example.UITests.swift"; sourceTree = "<group>"; };
 		A6D5F0E520FE8FDB00A2DDBC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A6E6AAA420FD2A22000EDFE4 /* ZestyBurger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZestyBurger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E6AAA420FD2A22000EDFE4 /* zesty-ios-swift-application-basic-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zesty-ios-swift-application-basic-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6E6AAAC20FD2A22000EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6E6AAB120FD2A2B000EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6E6AAB320FD2A2B000EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6E6AAB820FD2A2B000EDFE4 /* ZestyBurgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZestyBurgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6E6AABC20FD2A2B000EDFE4 /* ZestyBurgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZestyBurgerTests.swift; sourceTree = "<group>"; };
+		A6E6AAB820FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "zesty-ios-swift-application-basic-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E6AABC20FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "zesty-ios-swift-application-basic-exampleTests.swift"; sourceTree = "<group>"; };
 		A6E6AABE20FD2A2B000EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6E6AAC320FD2A2B000EDFE4 /* ZestyBurgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZestyBurgerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6E6AAC720FD2A2B000EDFE4 /* ZestyBurgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZestyBurgerUITests.swift; sourceTree = "<group>"; };
+		A6E6AAC320FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "zesty-ios-swift-application-basic-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E6AAC920FD2A2B000EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8B5BF1EB8CC5C5DC8D6A16A /* Pods-ZestyBurgerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurgerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurgerTests/Pods-ZestyBurgerTests.release.xcconfig"; sourceTree = "<group>"; };
-		B1ACE417AE935F6F0540D00D /* Pods_ZestyBurgerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZestyBurgerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE3953DEA8ACBE7AAA0813C5 /* Pods-ZestyBurgerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurgerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurgerUITests/Pods-ZestyBurgerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6613FDF171444C92BE0669F /* Pods-zesty-ios-swift-application-basic-exampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zesty-ios-swift-application-basic-exampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zesty-ios-swift-application-basic-exampleUITests/Pods-zesty-ios-swift-application-basic-exampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE43DC89C918792E1FBCF561 /* Pods-zesty-ios-swift-application-basic-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zesty-ios-swift-application-basic-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zesty-ios-swift-application-basic-example/Pods-zesty-ios-swift-application-basic-example.debug.xcconfig"; sourceTree = "<group>"; };
+		FB41B68A88F80C74A6257D37 /* Pods-zesty-ios-swift-application-basic-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zesty-ios-swift-application-basic-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-zesty-ios-swift-application-basic-example/Pods-zesty-ios-swift-application-basic-example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FC523DF552733102131C79A /* Pods_ZestyBurger.framework in Frameworks */,
+				5B17756151FEA3F94735626D /* Pods_zesty_ios_swift_application_basic_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9415E6302486944A71722C /* Pods_ZestyBurgerTests.framework in Frameworks */,
+				F05A52D78726B69C582D12D8 /* Pods_zesty_ios_swift_application_basic_exampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,21 +90,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EC24F8843C8233BF55C5BC1 /* Pods_ZestyBurgerUITests.framework in Frameworks */,
+				04181923539B73B50AA6437A /* Pods_zesty_ios_swift_application_basic_exampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31DE181F631274EDF145CF1E /* Frameworks */ = {
+		1332115F38FA8D8033883E1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50D98094544D161F33F9E076 /* Pods_ZestyBurger.framework */,
-				B1ACE417AE935F6F0540D00D /* Pods_ZestyBurgerTests.framework */,
-				A2AF750CB442931AEC1644AF /* Pods_ZestyBurgerUITests.framework */,
+				2DFA8D6692B24D74CF361571 /* Pods_zesty_ios_swift_application_basic_example.framework */,
+				5CDD4C937B6E19403C14AB47 /* Pods_zesty_ios_swift_application_basic_exampleTests.framework */,
+				0F17B4F2CACD4E0F8D4B2B85 /* Pods_zesty_ios_swift_application_basic_exampleUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BEBDF74740C888D4D58D38C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE43DC89C918792E1FBCF561 /* Pods-zesty-ios-swift-application-basic-example.debug.xcconfig */,
+				FB41B68A88F80C74A6257D37 /* Pods-zesty-ios-swift-application-basic-example.release.xcconfig */,
+				9E6EEDC93FC92F220734E752 /* Pods-zesty-ios-swift-application-basic-exampleTests.debug.xcconfig */,
+				6F76B18167450529420069B8 /* Pods-zesty-ios-swift-application-basic-exampleTests.release.xcconfig */,
+				60EDC0930C4CC1A321D0BBDF /* Pods-zesty-ios-swift-application-basic-exampleUITests.debug.xcconfig */,
+				B6613FDF171444C92BE0669F /* Pods-zesty-ios-swift-application-basic-exampleUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A656BA22210111C400F13846 /* Code */ = {
@@ -132,26 +145,26 @@
 			isa = PBXGroup;
 			children = (
 				A6D5F0E520FE8FDB00A2DDBC /* README.md */,
-				A6E6AAA620FD2A22000EDFE4 /* ZestyBurger */,
-				A6E6AABB20FD2A2B000EDFE4 /* ZestyBurgerTests */,
-				A6E6AAC620FD2A2B000EDFE4 /* ZestyBurgerUITests */,
+				A6E6AAA620FD2A22000EDFE4 /* zesty-ios-swift-application-basic-example */,
+				A6E6AABB20FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests */,
+				A6E6AAC620FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleUITests */,
 				A6E6AAA520FD2A22000EDFE4 /* Products */,
-				ECEE399688606F0A83EE2321 /* Pods */,
-				31DE181F631274EDF145CF1E /* Frameworks */,
+				6BEBDF74740C888D4D58D38C /* Pods */,
+				1332115F38FA8D8033883E1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		A6E6AAA520FD2A22000EDFE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6E6AAA420FD2A22000EDFE4 /* ZestyBurger.app */,
-				A6E6AAB820FD2A2B000EDFE4 /* ZestyBurgerTests.xctest */,
-				A6E6AAC320FD2A2B000EDFE4 /* ZestyBurgerUITests.xctest */,
+				A6E6AAA420FD2A22000EDFE4 /* zesty-ios-swift-application-basic-example.app */,
+				A6E6AAB820FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests.xctest */,
+				A6E6AAC320FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6E6AAA620FD2A22000EDFE4 /* ZestyBurger */ = {
+		A6E6AAA620FD2A22000EDFE4 /* zesty-ios-swift-application-basic-example */ = {
 			isa = PBXGroup;
 			children = (
 				A656BA23210111CD00F13846 /* Storyboard */,
@@ -159,67 +172,54 @@
 				A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */,
 				A6E6AAB320FD2A2B000EDFE4 /* Info.plist */,
 			);
-			path = ZestyBurger;
+			path = "zesty-ios-swift-application-basic-example";
 			sourceTree = "<group>";
 		};
-		A6E6AABB20FD2A2B000EDFE4 /* ZestyBurgerTests */ = {
+		A6E6AABB20FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				A6E6AABC20FD2A2B000EDFE4 /* ZestyBurgerTests.swift */,
+				A6E6AABC20FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests.swift */,
 				A6E6AABE20FD2A2B000EDFE4 /* Info.plist */,
 			);
-			path = ZestyBurgerTests;
+			path = "zesty-ios-swift-application-basic-exampleTests";
 			sourceTree = "<group>";
 		};
-		A6E6AAC620FD2A2B000EDFE4 /* ZestyBurgerUITests */ = {
+		A6E6AAC620FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A6E6AAC720FD2A2B000EDFE4 /* ZestyBurgerUITests.swift */,
+				A6CA978221013D25003042B6 /* zesty-ios-swift-application-basic-example.UITests.swift */,
 				A6E6AAC920FD2A2B000EDFE4 /* Info.plist */,
 			);
-			path = ZestyBurgerUITests;
-			sourceTree = "<group>";
-		};
-		ECEE399688606F0A83EE2321 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5EC52B720744955CEF8D1802 /* Pods-ZestyBurger.debug.xcconfig */,
-				9636C47E7129A96E6FB24B7A /* Pods-ZestyBurger.release.xcconfig */,
-				20397E53284CCAD7C734E6B7 /* Pods-ZestyBurgerTests.debug.xcconfig */,
-				A8B5BF1EB8CC5C5DC8D6A16A /* Pods-ZestyBurgerTests.release.xcconfig */,
-				DE3953DEA8ACBE7AAA0813C5 /* Pods-ZestyBurgerUITests.debug.xcconfig */,
-				5706554C58F716B0DF022DB9 /* Pods-ZestyBurgerUITests.release.xcconfig */,
-			);
-			name = Pods;
+			path = "zesty-ios-swift-application-basic-exampleUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A6E6AAA320FD2A22000EDFE4 /* ZestyBurger */ = {
+		A6E6AAA320FD2A22000EDFE4 /* zesty-ios-swift-application-basic-example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6E6AACC20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurger" */;
+			buildConfigurationList = A6E6AACC20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "zesty-ios-swift-application-basic-example" */;
 			buildPhases = (
-				5BAE77CE73F0C0884A543A40 /* [CP] Check Pods Manifest.lock */,
+				6844D758795DE5F136D85B1B /* [CP] Check Pods Manifest.lock */,
 				A6E6AAA020FD2A22000EDFE4 /* Sources */,
 				A6E6AAA120FD2A22000EDFE4 /* Frameworks */,
 				A6E6AAA220FD2A22000EDFE4 /* Resources */,
-				9198CAC8108E093083BCCCBE /* [CP] Embed Pods Frameworks */,
+				EF3E775EC6B0F63344DA06A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ZestyBurger;
-			productName = ZestyBurger;
-			productReference = A6E6AAA420FD2A22000EDFE4 /* ZestyBurger.app */;
+			name = "zesty-ios-swift-application-basic-example";
+			productName = "zesty-ios-swift-application-basic-example";
+			productReference = A6E6AAA420FD2A22000EDFE4 /* zesty-ios-swift-application-basic-example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A6E6AAB720FD2A2B000EDFE4 /* ZestyBurgerTests */ = {
+		A6E6AAB720FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6E6AACF20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurgerTests" */;
+			buildConfigurationList = A6E6AACF20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "zesty-ios-swift-application-basic-exampleTests" */;
 			buildPhases = (
-				57EA7B648367FDEC6F6802CF /* [CP] Check Pods Manifest.lock */,
+				EA52E0AA363409AF62F65C83 /* [CP] Check Pods Manifest.lock */,
 				A6E6AAB420FD2A2B000EDFE4 /* Sources */,
 				A6E6AAB520FD2A2B000EDFE4 /* Frameworks */,
 				A6E6AAB620FD2A2B000EDFE4 /* Resources */,
@@ -229,16 +229,16 @@
 			dependencies = (
 				A6E6AABA20FD2A2B000EDFE4 /* PBXTargetDependency */,
 			);
-			name = ZestyBurgerTests;
-			productName = ZestyBurgerTests;
-			productReference = A6E6AAB820FD2A2B000EDFE4 /* ZestyBurgerTests.xctest */;
+			name = "zesty-ios-swift-application-basic-exampleTests";
+			productName = "zesty-ios-swift-application-basic-exampleTests";
+			productReference = A6E6AAB820FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A6E6AAC220FD2A2B000EDFE4 /* ZestyBurgerUITests */ = {
+		A6E6AAC220FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6E6AAD220FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurgerUITests" */;
+			buildConfigurationList = A6E6AAD220FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "zesty-ios-swift-application-basic-exampleUITests" */;
 			buildPhases = (
-				8B4227AD7613EB38CC68608F /* [CP] Check Pods Manifest.lock */,
+				7CEF68D47B832DA42CA2C86C /* [CP] Check Pods Manifest.lock */,
 				A6E6AABF20FD2A2B000EDFE4 /* Sources */,
 				A6E6AAC020FD2A2B000EDFE4 /* Frameworks */,
 				A6E6AAC120FD2A2B000EDFE4 /* Resources */,
@@ -248,9 +248,9 @@
 			dependencies = (
 				A6E6AAC520FD2A2B000EDFE4 /* PBXTargetDependency */,
 			);
-			name = ZestyBurgerUITests;
-			productName = ZestyBurgerUITests;
-			productReference = A6E6AAC320FD2A2B000EDFE4 /* ZestyBurgerUITests.xctest */;
+			name = "zesty-ios-swift-application-basic-exampleUITests";
+			productName = "zesty-ios-swift-application-basic-exampleUITests";
+			productReference = A6E6AAC320FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -276,7 +276,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A6E6AA9F20FD2A22000EDFE4 /* Build configuration list for PBXProject "ZestyBurger" */;
+			buildConfigurationList = A6E6AA9F20FD2A22000EDFE4 /* Build configuration list for PBXProject "zesty-ios-swift-application-basic-example" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -289,9 +289,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A6E6AAA320FD2A22000EDFE4 /* ZestyBurger */,
-				A6E6AAB720FD2A2B000EDFE4 /* ZestyBurgerTests */,
-				A6E6AAC220FD2A2B000EDFE4 /* ZestyBurgerUITests */,
+				A6E6AAA320FD2A22000EDFE4 /* zesty-ios-swift-application-basic-example */,
+				A6E6AAB720FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests */,
+				A6E6AAC220FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,7 +325,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		57EA7B648367FDEC6F6802CF /* [CP] Check Pods Manifest.lock */ = {
+		6844D758795DE5F136D85B1B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,14 +336,14 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZestyBurgerTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-zesty-ios-swift-application-basic-example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5BAE77CE73F0C0884A543A40 /* [CP] Check Pods Manifest.lock */ = {
+		7CEF68D47B832DA42CA2C86C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -354,14 +354,14 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZestyBurger-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-zesty-ios-swift-application-basic-exampleUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B4227AD7613EB38CC68608F /* [CP] Check Pods Manifest.lock */ = {
+		EA52E0AA363409AF62F65C83 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,20 +372,20 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZestyBurgerUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-zesty-ios-swift-application-basic-exampleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9198CAC8108E093083BCCCBE /* [CP] Embed Pods Frameworks */ = {
+		EF3E775EC6B0F63344DA06A8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-zesty-ios-swift-application-basic-example/Pods-zesty-ios-swift-application-basic-example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/ZestySwiftContentEndpointWrapper/ZestySwiftContentEndpointWrapper.framework",
@@ -398,7 +398,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zesty-ios-swift-application-basic-example/Pods-zesty-ios-swift-application-basic-example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -420,7 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6E6AABD20FD2A2B000EDFE4 /* ZestyBurgerTests.swift in Sources */,
+				A6E6AABD20FD2A2B000EDFE4 /* zesty-ios-swift-application-basic-exampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6E6AAC820FD2A2B000EDFE4 /* ZestyBurgerUITests.swift in Sources */,
+				A6CA978321013D26003042B6 /* zesty-ios-swift-application-basic-example.UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,12 +437,12 @@
 /* Begin PBXTargetDependency section */
 		A6E6AABA20FD2A2B000EDFE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A6E6AAA320FD2A22000EDFE4 /* ZestyBurger */;
+			target = A6E6AAA320FD2A22000EDFE4 /* zesty-ios-swift-application-basic-example */;
 			targetProxy = A6E6AAB920FD2A2B000EDFE4 /* PBXContainerItemProxy */;
 		};
 		A6E6AAC520FD2A2B000EDFE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A6E6AAA320FD2A22000EDFE4 /* ZestyBurger */;
+			target = A6E6AAA320FD2A22000EDFE4 /* zesty-ios-swift-application-basic-example */;
 			targetProxy = A6E6AAC420FD2A2B000EDFE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -583,12 +583,12 @@
 		};
 		A6E6AACD20FD2A2B000EDFE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EC52B720744955CEF8D1802 /* Pods-ZestyBurger.debug.xcconfig */;
+			baseConfigurationReference = CE43DC89C918792E1FBCF561 /* Pods-zesty-ios-swift-application-basic-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3FUT3WUPW;
-				INFOPLIST_FILE = ZestyBurger/Info.plist;
+				INFOPLIST_FILE = "zesty-ios-swift-application-basic-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,12 +602,12 @@
 		};
 		A6E6AACE20FD2A2B000EDFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9636C47E7129A96E6FB24B7A /* Pods-ZestyBurger.release.xcconfig */;
+			baseConfigurationReference = FB41B68A88F80C74A6257D37 /* Pods-zesty-ios-swift-application-basic-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3FUT3WUPW;
-				INFOPLIST_FILE = ZestyBurger/Info.plist;
+				INFOPLIST_FILE = "zesty-ios-swift-application-basic-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,94 +621,94 @@
 		};
 		A6E6AAD020FD2A2B000EDFE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20397E53284CCAD7C734E6B7 /* Pods-ZestyBurgerTests.debug.xcconfig */;
+			baseConfigurationReference = 9E6EEDC93FC92F220734E752 /* Pods-zesty-ios-swift-application-basic-exampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3FUT3WUPW;
-				INFOPLIST_FILE = ZestyBurgerTests/Info.plist;
+				INFOPLIST_FILE = "zesty-ios-swift-application-basic-exampleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.zesty.ZestyBurgerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.zesty.zesty-ios-swift-application-basic-exampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZestyBurger.app/ZestyBurger";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zesty-ios-swift-application-basic-example.app/zesty-ios-swift-application-basic-example";
 			};
 			name = Debug;
 		};
 		A6E6AAD120FD2A2B000EDFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8B5BF1EB8CC5C5DC8D6A16A /* Pods-ZestyBurgerTests.release.xcconfig */;
+			baseConfigurationReference = 6F76B18167450529420069B8 /* Pods-zesty-ios-swift-application-basic-exampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3FUT3WUPW;
-				INFOPLIST_FILE = ZestyBurgerTests/Info.plist;
+				INFOPLIST_FILE = "zesty-ios-swift-application-basic-exampleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.zesty.ZestyBurgerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.zesty.zesty-ios-swift-application-basic-exampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZestyBurger.app/ZestyBurger";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zesty-ios-swift-application-basic-example.app/zesty-ios-swift-application-basic-example";
 			};
 			name = Release;
 		};
 		A6E6AAD320FD2A2B000EDFE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE3953DEA8ACBE7AAA0813C5 /* Pods-ZestyBurgerUITests.debug.xcconfig */;
+			baseConfigurationReference = 60EDC0930C4CC1A321D0BBDF /* Pods-zesty-ios-swift-application-basic-exampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3FUT3WUPW;
-				INFOPLIST_FILE = ZestyBurgerUITests/Info.plist;
+				INFOPLIST_FILE = "zesty-ios-swift-application-basic-exampleUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.zesty.ZestyBurgerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.zesty.zesty-ios-swift-application-basic-exampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ZestyBurger;
+				TEST_TARGET_NAME = "zesty-ios-swift-application-basic-example";
 			};
 			name = Debug;
 		};
 		A6E6AAD420FD2A2B000EDFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5706554C58F716B0DF022DB9 /* Pods-ZestyBurgerUITests.release.xcconfig */;
+			baseConfigurationReference = B6613FDF171444C92BE0669F /* Pods-zesty-ios-swift-application-basic-exampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3FUT3WUPW;
-				INFOPLIST_FILE = ZestyBurgerUITests/Info.plist;
+				INFOPLIST_FILE = "zesty-ios-swift-application-basic-exampleUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.zesty.ZestyBurgerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.zesty.zesty-ios-swift-application-basic-exampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ZestyBurger;
+				TEST_TARGET_NAME = "zesty-ios-swift-application-basic-example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6E6AA9F20FD2A22000EDFE4 /* Build configuration list for PBXProject "ZestyBurger" */ = {
+		A6E6AA9F20FD2A22000EDFE4 /* Build configuration list for PBXProject "zesty-ios-swift-application-basic-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6E6AACA20FD2A2B000EDFE4 /* Debug */,
@@ -717,7 +717,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6E6AACC20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurger" */ = {
+		A6E6AACC20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "zesty-ios-swift-application-basic-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6E6AACD20FD2A2B000EDFE4 /* Debug */,
@@ -726,7 +726,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6E6AACF20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurgerTests" */ = {
+		A6E6AACF20FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "zesty-ios-swift-application-basic-exampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6E6AAD020FD2A2B000EDFE4 /* Debug */,
@@ -735,7 +735,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6E6AAD220FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "ZestyBurgerUITests" */ = {
+		A6E6AAD220FD2A2B000EDFE4 /* Build configuration list for PBXNativeTarget "zesty-ios-swift-application-basic-exampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6E6AAD320FD2A2B000EDFE4 /* Debug */,
