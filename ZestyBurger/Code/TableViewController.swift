@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ZestySwiftContentEndpointWrapper
 import SwiftyJSON
 
 /// Provides a TableView to navigate through all the menus of [ZestyBurger](http://burger.zesty.site)
@@ -17,14 +18,14 @@ class TableViewController: UITableViewController {
     var params: [String: String]! = nil
     var path = "/"
     var json: JSON!
-    var api: ZestyAPI!
+    var api: ZestySwiftContentEndpointWrapper!
     
     /// Makes all the api calls
     /// note: api data should be set in instantiation by editing `TableViewController.endpoint`, `TableViewController.params`, and `TableViewController.path`
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        api = ZestyAPI(url: "https://6c706l48-dev.preview.zestyio.com")
+        api = ZestySwiftContentEndpointWrapper(url: "https://6c706l48-dev.preview.zestyio.com")
         let zuid = "7-6a9a271-90blqw"
 //        api.getItem(for: zuid) { (data, error) in
 //            print(data["city"])

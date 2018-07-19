@@ -10,9 +10,8 @@
 		2E9415E6302486944A71722C /* Pods_ZestyBurgerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ACE417AE935F6F0540D00D /* Pods_ZestyBurgerTests.framework */; };
 		2FC523DF552733102131C79A /* Pods_ZestyBurger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D98094544D161F33F9E076 /* Pods_ZestyBurger.framework */; };
 		7EC24F8843C8233BF55C5BC1 /* Pods_ZestyBurgerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AF750CB442931AEC1644AF /* Pods_ZestyBurgerUITests.framework */; };
-		A6179CFC20FEBD55004CC440 /* ZestyAPITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6179CFB20FEBD55004CC440 /* ZestyAPITestsViewController.swift */; };
 		A65D50B820FD497F0044AAE5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50B720FD497F0044AAE5 /* TableViewController.swift */; };
-		A65D50BA20FD49CA0044AAE5 /* ZestyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50B920FD49CA0044AAE5 /* ZestyAPI.swift */; };
+		A65D50BA20FD49CA0044AAE5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50B920FD49CA0044AAE5 /* Extensions.swift */; };
 		A65D50BC20FD599A0044AAE5 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */; };
 		A65D50BE20FD687E0044AAE5 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */; };
 		A6D5F0E620FE8FDB00A2DDBC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6D5F0E520FE8FDB00A2DDBC /* README.md */; };
@@ -48,9 +47,8 @@
 		5EC52B720744955CEF8D1802 /* Pods-ZestyBurger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger.debug.xcconfig"; sourceTree = "<group>"; };
 		9636C47E7129A96E6FB24B7A /* Pods-ZestyBurger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZestyBurger.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger.release.xcconfig"; sourceTree = "<group>"; };
 		A2AF750CB442931AEC1644AF /* Pods_ZestyBurgerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZestyBurgerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6179CFB20FEBD55004CC440 /* ZestyAPITestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZestyAPITestsViewController.swift; sourceTree = "<group>"; };
 		A65D50B720FD497F0044AAE5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		A65D50B920FD49CA0044AAE5 /* ZestyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZestyAPI.swift; sourceTree = "<group>"; };
+		A65D50B920FD49CA0044AAE5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		A6D5F0E520FE8FDB00A2DDBC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -109,6 +107,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A656BA22210111C400F13846 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */,
+				A65D50B720FD497F0044AAE5 /* TableViewController.swift */,
+				A65D50B920FD49CA0044AAE5 /* Extensions.swift */,
+				A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */,
+				A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		A656BA23210111CD00F13846 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6AAAB20FD2A22000EDFE4 /* Main.storyboard */,
+				A6E6AAB020FD2A2B000EDFE4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		A6E6AA9B20FD2A22000EDFE4 = {
 			isa = PBXGroup;
 			children = (
@@ -135,16 +154,10 @@
 		A6E6AAA620FD2A22000EDFE4 /* ZestyBurger */ = {
 			isa = PBXGroup;
 			children = (
-				A6E6AAA720FD2A22000EDFE4 /* AppDelegate.swift */,
-				A6E6AAAB20FD2A22000EDFE4 /* Main.storyboard */,
+				A656BA23210111CD00F13846 /* Storyboard */,
+				A656BA22210111C400F13846 /* Code */,
 				A6E6AAAE20FD2A2B000EDFE4 /* Assets.xcassets */,
-				A6E6AAB020FD2A2B000EDFE4 /* LaunchScreen.storyboard */,
 				A6E6AAB320FD2A2B000EDFE4 /* Info.plist */,
-				A65D50B720FD497F0044AAE5 /* TableViewController.swift */,
-				A65D50B920FD49CA0044AAE5 /* ZestyAPI.swift */,
-				A65D50BB20FD599A0044AAE5 /* DefaultTableViewCell.swift */,
-				A65D50BD20FD687E0044AAE5 /* DisplayViewController.swift */,
-				A6179CFB20FEBD55004CC440 /* ZestyAPITestsViewController.swift */,
 			);
 			path = ZestyBurger;
 			sourceTree = "<group>";
@@ -375,11 +388,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZestyBurger/Pods-ZestyBurger-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ZestySwiftContentEndpointWrapper/ZestySwiftContentEndpointWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZestySwiftContentEndpointWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -396,8 +411,7 @@
 				A65D50BE20FD687E0044AAE5 /* DisplayViewController.swift in Sources */,
 				A65D50B820FD497F0044AAE5 /* TableViewController.swift in Sources */,
 				A65D50BC20FD599A0044AAE5 /* DefaultTableViewCell.swift in Sources */,
-				A6179CFC20FEBD55004CC440 /* ZestyAPITestsViewController.swift in Sources */,
-				A65D50BA20FD49CA0044AAE5 /* ZestyAPI.swift in Sources */,
+				A65D50BA20FD49CA0044AAE5 /* Extensions.swift in Sources */,
 				A6E6AAA820FD2A22000EDFE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

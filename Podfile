@@ -6,9 +6,8 @@ target 'ZestyBurger' do
 
 	use_frameworks!
 
-	pod 'SwiftyJSON', '~> 4.0'
-        pod 'Alamofire', '~> 4.7'
-
+	pod 'ZestySwiftContentEndpointWrapper'
+    pod 'SwiftyJSON', '~> 4.0'
  
   target 'ZestyBurgerTests' do
       inherit! :search_paths
