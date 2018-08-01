@@ -27,7 +27,7 @@ class TableViewController: UITableViewController {
     
         api = ZestySwiftContentEndpointWrapper(url: "https://6c706l48-dev.preview.zestyio.com")
         
-        api.getCustomData(from: self.endpoint, params: self.params) { (data, some) in
+        api.getCustomJSONData(from: self.endpoint, params: self.params) { (data, some) in
             if let error = some {
                 // handle
                 print(error.localizedDescription!)
@@ -93,6 +93,8 @@ class TableViewController: UITableViewController {
         if (text.contains("@ESCAPING/: ")) {
             let left = text.index(text.startIndex, offsetBy: 12)
             cell.label.text! = String(text[left..<text.endIndex])
+            cell.selectionStyle = .none
+            cell.accessoryType = .none
             cell.label.font = UIFont.boldSystemFont(ofSize: cell.label.font.pointSize)
             cell.header = true
         }
@@ -115,12 +117,7 @@ class TableViewController: UITableViewController {
         case "/":
             if text.lowercased() == "about" {
                 let realVC = self.storyboard!.instantiateViewController(withIdentifier: "displayVC") as! DisplayViewController
-                // use this when basic-json-endpoint api gets fixed on the zesty.io side
-//                api.getItem(for: "7-a4b6ac-bc4n0q") { (data, error) in
-//                    realVC.htmlData = ((error != nil) ? error!.localizedDescription : data["description"])!
-//                    self.navigationController?.pushViewController(realVC, animated: true)
-//                }
-                api.getCustomData(from: "aboutdata", params: nil) { (data, error) in
+                api.getCustomJSONData(from: "aboutdata", params: nil) { (data, error) in
                     realVC.htmlData = data["content"].stringValue
                     self.navigationController?.pushViewController(realVC, animated: true)
                 }
@@ -137,6 +134,7 @@ class TableViewController: UITableViewController {
             vc.path = "/locations/specificloc"
             vc.endpoint = "menulist"
             vc.params = ["location" : text]
+            
             self.navigationController?.pushViewController(vc, animated: true)
             vc.navigationItem.title! = "\(text)"
             break

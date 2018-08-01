@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.7.3)
   - SwiftyJSON (4.1.0)
-  - ZestySwiftContentEndpointWrapper (0.1.1):
+  - ZestySwiftContentEndpointWrapper (0.2.0):
     - Alamofire (~> 4.7)
     - SwiftyJSON (~> 4.0)
 
@@ -18,7 +18,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
-  ZestySwiftContentEndpointWrapper: 94ece3a86cbdc6ee98c5299defdcc9ee7a364886
+  ZestySwiftContentEndpointWrapper: 61a4b4b9d095571c5e136e37642f9c3e4dc2ff72
 
 PODFILE CHECKSUM: a620135da2dc1c060372e7628de8a402d3dba61a
 
